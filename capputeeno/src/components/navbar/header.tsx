@@ -1,14 +1,14 @@
-"use client"
+'use client';
 
-import { Saira_Stencil_One } from 'next/font/google'
-import styled from "styled-components"
-import { PrimaryInputWSearchIcon } from "./primary-input"
-import { CartControl } from './cart-control'
+import { Saira_Stencil_One } from 'next/font/google';
+import styled from 'styled-components';
+import { CartControl } from '.';
+import { PrimaryInputWSearchIcon } from '../inputs';
 
 const sairaStencil = Saira_Stencil_One({
-  weight: ['400',],
-  subsets: ['latin']
-})
+  weight: ['400'],
+  subsets: ['latin'],
+});
 
 interface HeaderProps {}
 
@@ -24,14 +24,14 @@ const TagHeader = styled.header`
     justify-content: center;
     gap: 24px;
   }
-`
+`;
 
 const Logo = styled.a`
   font-size: 40px;
   font-weight: 400;
   line-height: 150%;
   color: var(--logo-color);
-`
+`;
 
 export function Header(props: HeaderProps) {
   return (
@@ -43,5 +43,5 @@ export function Header(props: HeaderProps) {
         <CartControl />
       </div>
     </TagHeader>
-  )
+  );
 }
