@@ -15,8 +15,6 @@ const ContainerGrid = styled.div`
 export function ProductsList(props: ProductsListProps) {
   const { products } = useProducts();
 
-  console.log({ products });
-
   return (
     <ContainerGrid>
       {products.map(({ id, image_url, name, price_in_cents }) => (
