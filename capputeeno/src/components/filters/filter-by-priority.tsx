@@ -38,6 +38,7 @@ const SortByList = styled.ul`
   list-style: none;
   position: absolute;
   top: 100%;
+  z-index: 1000;
 
   width: 250px;
   padding: 12px 16px;
